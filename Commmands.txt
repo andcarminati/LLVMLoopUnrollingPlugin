@@ -1,0 +1,1 @@
+/usr/local/bin/opt -load-pass-plugin=./libMyLoopPass.so -passes="mem2reg,loop(loop-rotate,my-loop-pass)" ../testes/testeloop.s -S -o teste -debug-only="loop-opt-tutorial-verbose"
